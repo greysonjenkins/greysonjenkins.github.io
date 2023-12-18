@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
             
             
                 term.echo ("")
-                term.echo ("Here you can write something catchy about yourself\n")
+                term.echo ("\u0022Whereof one cannot speak, thereof one must be silent.\u0022\n        - Ludwig Wittgenstein (Tractatus Logico-Philosophicus)\n")
             
         
         term.echo ("");
@@ -78,17 +78,7 @@ jQuery(document).ready(function($) {
         
             
                 
-                    term.echo("github:" + "          https:\/\/github.com");
-                
-                    term.echo("facebook:" + "        https:\/\/facebook.com");
-                
-                    term.echo("myspace:" + "         https:\/\/myspace.com");
-                
-                    term.echo("hi5:" + "             https:\/\/www.hi5.com");
-                
-                    term.echo("instagram:" + "       https:\/\/instagram.com");
-                
-                    term.echo("Another social:" + "  https:\/\/anothersocial.com");
+                    term.echo("github:" + "          https:\/\/github.com\/greysonjenkins");
                 
             
         
@@ -120,16 +110,18 @@ jQuery(document).ready(function($) {
         term.echo("");
         
             
-                term.echo("[[b;red;]Red Color training]");
-                term.echo("June 2019 - July 2019");
+                term.echo("[[b;orange;]Pepperdine University]");
+                term.echo("2019 - 2023");
                 
-                    term.echo("Descrption about red color trianing");
+                    term.echo("B.A. in Computer Science and Philosophy | Minor in Great Books");
                 
                 term.echo("-------------------- ");
                 term.echo("");
             
-                term.echo("[[b;grey;]Default color training]");
-                term.echo("Sept 2004 - Jun 2008");
+                term.echo("[[b;green;]Woodinville High School]");
+                term.echo("2015 - 2019");
+                
+                    term.echo("Honors: Valedictorian");
                 
                 term.echo("-------------------- ");
                 term.echo("");
@@ -203,10 +195,19 @@ jQuery(document).ready(function($) {
         term.echo("");
         
             
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]English:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  100  +"%");
+                
+                term.echo("")
+            
                 var bar_length = Math.round( 50  / 10);
                 var bar_filled = Array(bar_length + 1).join("&#9611;");
                 var bar_blank= Array(11 - bar_length).join("&#9617;");
-                term.echo("[[b;Blue;]English:]\n" +
+                term.echo("[[b;grey;]Chinese (Mandarin):]\n" +
                         "" + bar_filled + bar_blank + 
                         " " +  50  +"%");
                 
@@ -259,8 +260,8 @@ jQuery(document).ready(function($) {
 
     function misc (){
         term.echo ("")
-        term.echo("[[b;teal;]This Section can have a different command name]" + "\n")
-        term.echo ("[[;orange;]Here the title and the content can have different colors\nThe content can be multiline and spaces will be respected as well\nThis section will have the default command: misc\nbut you can name it something else with the property\ncommandName: \u003cString\u003e\nGive it a shot and try and uncomment the line \ncommandName: newcommand\nnow instead of misc you can execute the newcommand for this section\nAuto completion will know it too! :D \n]")
+        term.echo("[[b;teal;]TODO]" + "\n")
+        term.echo ("[[;orange;]\nThis section will have the default command: misc\n\nCan name it something else with the property\ncommandName = \u003cString\u003e\n(commandName = \u0022newcommand\u0022)\n]")
         term.echo ("")
     }
 
